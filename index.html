@@ -4,18 +4,30 @@
   <meta charset="utf-8"> 
   <title>WEB1 - Welcome</title>
     <span>
-      <a href="index.html" style="color:red">Home </a>        
+      <a href="index.html" style="color:black">Home </a>        
       <a href="1.html" >Products </a>
       <a href="2.html" >About us </a>   
       <a href="3.html" >Projects </a>    
       <a href="4.html" >Contact us </a>
     </span>
   <style>
-     a {color:red;
-       font-size:20px;
+     a {color:black;
+       font-size:30px;
        font-weight:bold;
 /*     text-align:right;*/
        text-decoration:none;}
+      
+       .blend{
+               height:1270px;
+               border:5px solid;
+               background-repeat:no-repeat;
+               background-color: rgba(255,0,0,0.5);
+               background-size:contain;        
+               background-image:url('busan night.jpg');
+               background-blend-mode:saturation;
+               transition:background-color 10s;}
+        .blend:hover{background-color: rgba(255,0,0,1);
+               transition:background-color 3s;}
       
       /*
       h1 {font-size:50px;
