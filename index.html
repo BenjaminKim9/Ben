@@ -2,35 +2,87 @@
 <html>
 <head>
   <meta charset="utf-8"> 
-  <title>WEB1 - Welcome</title>
-   <h1>~ Welcome to visit at coding life ~</h1>
+  <title>Web1_Coding Life</title>
+   
+    <h3> 
     <span>
-      <a href="index.html" style="color:black">Home </a>       
-      <a href="1.html" >Products </a>
-      <a href="2.html" >About us </a>   
-      <a href="3.html" >Projects </a>    
-      <a href="4.html" >Contact us </a>
+      <a href="index.html" title="Home">Home /</a>         
+      <a href="1.html" title="Products">Products /</a>       
+      <a href="3.html" title="Projects">Projects /</a>     
+      <a href="2.html" title="About us">About us /</a>       
+      <a href="4.html" title="Contact us">Contact us </a>   
     </span>
+    </h3>
+    
+<!--    <link rel="stylesheet" -->
+<!--          href="fontello-eb581353/css/fontello.css">-->
+<!--    <link rel="stylesheet" -->
+<!--          href="fontello-eb581353/css/animation.css">  -->
+      
   <style>
-      h1{text-align: center;
-         color: red;}
-     a {color:black;
-       font-size:30px;
-       font-weight:bold;
-/*     text-align:right;*/
+      /*
+      body k{margin-left: 100px;
+            margin-top: 150px;
+            font-size: 100px;
+            color: springgreen;} 
+      */      
+      body {padding-top:125px;}        
+        #w {background-color:aqua;
+            padding-top:50px;
+            font-size: 40px;
+            color:black;
+            position:fixed;            
+            left:0;
+            top:0;
+            width:100%;
+            height:100px;
+            text-align:center;}     
+      
+      h3{text-align: right;         
+         font-size:1.25rem;        
+         margin-top:20px;}
+      h3:hover{transform:
+              scale(1.30);
+              transform-origin: right;
+              transition:all 0.5s;}       
+      h2 {text-align: center;}
+      
+     a {color:blue;      
        text-decoration:none;}
       
-       .blend{
-               height:1270px;
-               border:5px solid;
-               background-repeat:no-repeat;
-               background-color: rgba(255,0,0,0.5);
-               background-size:contain;        
-               background-image:url('busan night.jpg');
-               background-blend-mode:saturation;
-               transition:background-color 10s;}
-        .blend:hover{background-color: rgba(255,0,0,1);
-               transition:background-color 3s;}
+      .column{column-count:3;
+             column-rule-style:solid;
+             column-rule-width:4px;
+             column-rule-color:red;}
+      
+      .container1{background-color:greenyellow;
+                   border: 3px solid black;
+                   font-size:20px;
+                   padding:10px;
+                   text-align: justify;}
+      .container2{background-color:lightpink;
+                   border: 3px solid black;
+                   font-size:20px;
+                   padding:10px;
+                   text-align: justify;}  
+      .container3{background-color:coral;
+                   border: 3px solid black;
+                   font-size:20px;
+                   padding:10px;
+                   text-align: justify;}  
+      .container4{background-color:yellow;
+                   border: 3px solid black;
+                   font-size:20px;
+                   padding:10px;
+                   text-align: justify;}  
+      .container5{background-color:lightskyblue;
+                   border: 3px solid black;
+                   font-size:20px;
+                   padding:10px;
+                   text-align: justify;}  
+      div {text-align:center;
+          font-size:30px;
+          font-weight:bold;}
       
       /*
       h1 {font-size:50px;
@@ -48,37 +100,7 @@
             text-align:justify;}
       div {border:5px solid gray;
           padding:10px;}
-      */     
-     div {border:3px solid black;
-          font-size:20px;
-          text-align:justify;
-          Padding:10px;
-          background-size:contain;
-          background: aqua url('png.png') no-repeat center;}
-    div {border:3px solid black;
-          font-size:20px;
-          text-align:justify;
-          Padding:10px;
-          background-size:contain;
-          background:red url('png.png') no-repeat center;}
-    div  {border:3px solid black;
-          font-size:20px;
-          text-align:justify;
-          Padding:10px;
-          background-size:contain;
-          background:yellow url('png.png') no-repeat center;}
-    div {border:3px solid black;
-          font-size:20px;
-          text-align:justify;
-          Padding:10px;
-          background-size:contain;
-          background:skyblue url('png.png') no-repeat center;}
-    div {border:3px solid black;
-          font-size:20px;
-          text-align:justify;
-          Padding:10px;
-          background-size:contain;
-          background:yellow url('png.png') no-repeat center;}
+      */             
   </style>
       
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -90,8 +112,8 @@
   gtag('js', new Date());
   gtag('config', 'UA-118599586-1');
 </script>
-
 </head>
+
 <body>
 <!--          <h1>Home</h1>-->            
 <!--       <div><a href="index.html" style="color:red">Home</a></div>-->
@@ -99,32 +121,47 @@
 <!--       <div><a href="2.html">About us</a></div>-->
 <!--       <div><a href="3.html">Projects</a></div>-->
 <!--       <div><a href="4.html">Contact us</a></div>-->
-<!--         <div id="grid">              -->
-         <div style=text-align:center;font-size:30px;font-weight:bold;>Home</div>
-            <div>
+<!--         <div id="grid">-->
+        
+         <div id="w">~ Welcome to visit at coding life ~</div>         
+         <k class="icon-globe-alt animate-spin"></k>
+                         
+            <div class="container1">              
+            <div>Home</div>                      
              The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, So</font>cial Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.
              </div><br> 
 <!--            </div>-->
-           <div style=text-align:center;font-size:30px;font-weight:bold;>Products</div>                 
-            <div>
+           <div class="container2">
+           <div>Products</div>            
              The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.
              </div>
              
-             <iframe style=text-align:"center" width="560" height="315" src="https://www.youtube.com/embed/4HNNkW3zphA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                          
-           <div style=text-align:center;font-size:30px;font-weight:bold;>About us</div>
-            <div>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!
-             </div> <br>      
-           <div style=text-align:center;font-size:30px;font-weight:bold;>Projects</div>
-            <div>
+             <h2>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/4HNNkW3zphA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             </h2>                         
+           
+            <div class="container3">
+            <div>Projects</div>
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, asperiores. Harum, maxime doloremque! Quae repudiandae officiis, beatae sunt, ipsum ipsa ullam suscipit dolorum velit totam, placeat, quia atque dolor. Voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!
              </div>
-             <img src="pic_busan%20night.jpg" width="30%"> 
-                           
-           <div style=text-align:center;font-size:30px;font-weight:bold;>Contact us</div>
-            <div>
+             
+             <div class="column">
+             <img src="pic_busan%20night.jpg" width="100%"> 
+             <img src="pic_busan%20night.jpg" width="100%">
+             <img src="pic_busan%20night.jpg" width="100%"> 
+             <img src="pic_busan%20night.jpg" width="100%">
+             <img src="pic_busan%20night.jpg" width="100%">
+             <img src="pic_busan%20night.jpg" width="100%">  
+             </div>             
+             
+            <div class="container4">
+            <div>About us</div>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!
+             </div> <br>                                       
+          
+            <div class="container5">
+             <div>Contact us</div>
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, repudiandae repellat unde voluptatibus quidem ullam quaerat eos libero quisquam officia, nostrum dicta ratione omnis. Magni cupiditate aperiam architecto, aut consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!
-             </div>       
+            </div>       
 </body>
 </html>
