@@ -3,87 +3,137 @@
 <head>
   <meta charset="utf-8"> 
   <title>Web1_Coding Life</title>
-   
-    <h3> 
-    <span>
-      <a href="index.html" title="Home">Home /</a>         
-      <a href="1.html" title="Products">Products /</a>       
-      <a href="3.html" title="Projects">Projects /</a>     
-      <a href="2.html" title="About us">About us /</a>       
-      <a href="4.html" title="Contact us">Contact us </a>   
-    </span>
-    </h3>
-    
+          <!--    
+         <span>        
+          <a href="index.html">Home / </a>         
+          <a href="1.html">Products / </a>       
+          <a href="3.html">Projects / </a>     
+          <a href="2.html">About us / </a>       
+          <a href="4.html">Contact us </a>   
+         </span> 
+         -->         
 <!--    <link rel="stylesheet" -->
 <!--          href="fontello-eb581353/css/fontello.css">-->
 <!--    <link rel="stylesheet" -->
-<!--          href="fontello-eb581353/css/animation.css">  -->
-      
-  <style>
+<!--          href="fontello-eb581353/css/animation.css">-->      
+  <style>   
+/*         *{width: 400px;}*/
       /*
-      body k{margin-left: 100px;
-            margin-top: 150px;
-            font-size: 100px;
-            color: springgreen;} 
-      */      
-      body {padding-top:125px;}        
-        #w {background-color:aqua;
-            padding-top:50px;
-            font-size: 40px;
-            color:black;
-            position:fixed;            
-            left:0;
-            top:0;
-            width:100%;
-            height:100px;
-            text-align:center;}     
-      
-      h3{text-align: right;         
-         font-size:1.25rem;        
-         margin-top:20px;}
-      h3:hover{transform:
-              scale(1.30);
-              transform-origin: right;
-              transition:all 0.5s;}       
-      h2 {text-align: center;}
-      
-     a {color:blue;      
-       text-decoration:none;}
-      
       .column{column-count:3;
-             column-rule-style:solid;
-             column-rule-width:4px;
-             column-rule-color:red;}
-      
+              column-rule-style:solid;
+              column-rule-width:4px;
+              column-rule-color:red;}      
       .container1{background-color:greenyellow;
-                   border: 3px solid black;
-                   font-size:20px;
-                   padding:10px;
-                   text-align: justify;}
+                 border: 3px solid black;
+                 font-size:20px;
+                 padding:10px;
+                 text-align: justify;}
       .container2{background-color:lightpink;
-                   border: 3px solid black;
-                   font-size:20px;
-                   padding:10px;
-                   text-align: justify;}  
-      .container3{background-color:coral;
-                   border: 3px solid black;
-                   font-size:20px;
-                   padding:10px;
-                   text-align: justify;}  
-      .container4{background-color:yellow;
-                   border: 3px solid black;
-                   font-size:20px;
-                   padding:10px;
-                   text-align: justify;}  
-      .container5{background-color:lightskyblue;
-                   border: 3px solid black;
-                   font-size:20px;
-                   padding:10px;
-                   text-align: justify;}  
-      div {text-align:center;
-          font-size:30px;
-          font-weight:bold;}
-      
+                 border: 3px solid black;
+                 font-size:20px;
+                 padding:10px;
+                 text-align: justify;} 
+      */
+       #w {background-color:aqua;
+           padding-top:50px;
+/*           font-size: 40px;*/
+           color:black;
+           position:absolute;            
+           left:0;
+           top:0;
+           width:100%;
+           height:90px;
+/*           text-align:center;*/      } 
+       #w {text-align:center;         
+           font-size:2rem;
+/*           margin-top:20px;*/      }
+       #w:hover{transform:       
+                scale(2);
+                transform-origin: center;
+                transition:all 1s;} 
+       body {padding-top:132px;} 
+       a {color:blue;      
+          text-decoration:none;}
+      #sn{display:flex;
+          flex-direction: row-reverse;
+          font-size: 20px;
+          padding-top: 5px;
+          padding-bottom: 5px;}  
+       #h {border:15px solid tomato;
+           font-size:30px;           
+           text-align: center;}
+       #i {background-color:tomato;          
+           font-size:20px;
+           color:white;            
+           text-align:justify;
+           padding:10px;}      
+       #j {border:15px solid royalblue;
+           font-size:30px;           
+           text-align: center;}
+       #k {background-color:royalblue;          
+           font-size:20px;
+           color:white;            
+           text-align:justify;
+           padding:10px;}     
+       div {text-align: right;}
+/*        h2 {text-align: right;*/
+/*            background-color: yellow;}*/
+/*        h3 {text-align: right;}     */
+       /*      
+       body k{margin-left: 100px;
+              margin-top: 150px;
+              font-size: 100px;
+              color: springgreen;} 
+       t{text-align: right;         
+         font-size:1.25rem;        
+         margin-top:30px;}
+       t:hover{transform:
+              scaleX(2);
+              transform-origin: right;
+              transition:all 0.5s;} 
+      */        
+       .container3{display:flex;
+                   flex-direction: column;        
+                   font-size:20px;}              
+/*        header{border-bottom:1px solid gray;*/
+/*               background-color:yellow;*/
+/*               text-align: center;}*/        
+        .content{display:flex;}       
+        .content nav{border-right:1px solid gray;}
+        .content aside{border-left:1px solid gray;}   
+       @media(max-width:500px){
+        .content{flex-direction:column;}
+        .content nav,aside{
+                border:none;
+                flex-basis:auto;
+                main{order:0}
+                nav{order:1;}
+                aside{order:2; display:none;} } } 
+        nav {flex-basis: 150px;
+             flex-shrink: 0; 
+             padding-left: 10px;
+             padding-top: 10px;
+             text-align: left;
+             background-color:greenyellow;}
+        main{padding:10px; 
+             color:white;
+             background-color:crimson;}
+        #l {font-size:30px;           
+            text-align: center;}
+        #m {font-size:20px;
+            padding-top: 10px;
+            text-align:justify;
+            color:white;}
+        aside{flex-basis: 150px;
+              flex-shrink: 0;
+              padding: 10px;
+              text-align: justify;
+              background-color:greenyellow;}  
+        footer{border-top:1px solid gray;
+               background-color:darkgray;
+               text-align: center;                
+               padding-top: 10px;
+               padding-bottom: 10px;}
       /*
       h1 {font-size:50px;
          text-align:center;
@@ -96,13 +146,12 @@
          width:500px;}      
       #grid {border:5px solid pink;
             display:grid;
-            grid-template-columns:150px 1fr;           
+            grid-template-columns:150px 1fr;       
             text-align:justify;}
       div {border:5px solid gray;
           padding:10px;}
       */             
-  </style>
-      
+  </style>      
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/
     gtag/js?id=UA-118599586-1"></script>
@@ -114,54 +163,63 @@
 </script>
 </head>
 
-<body>
-<!--          <h1>Home</h1>-->            
-<!--       <div><a href="index.html" style="color:red">Home</a></div>-->
-<!--       <div><a href="1.html">Products</a></div>-->
-<!--       <div><a href="2.html">About us</a></div>-->
-<!--       <div><a href="3.html">Projects</a></div>-->
-<!--       <div><a href="4.html">Contact us</a></div>-->
-<!--         <div id="grid">-->
-        
-         <div id="w">~ Welcome to visit at coding life ~</div>         
-         <k class="icon-globe-alt animate-spin"></k>
-                         
-            <div class="container1">              
-            <div>Home</div>                      
-             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, So</font>cial Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.
-             </div><br> 
-<!--            </div>-->
-           <div class="container2">
-           <div>Products</div>            
+<body>     
+    <div id="w">~ Welcome to visit at coding life ~</div>     
+<!--         <k class="icon-plancast animate-spin"></k>       -->   
+         <div id="sn">
+          <a href="index.html">Home   </a>         
+          <a href="1.html">Products_  </a>       
+          <a href="3.html">Projects_  </a>     
+          <a href="2.html">About us_  </a>       
+          <a href="4.html">Contact us_</a>
+         </div>         
+            <div id="h">Home</div>  
+            <div id="i">                   
+             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, So</font>cial Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.       
+            </div> 
+            <div id="j">Products</div>  
+            <div id="k">            
              The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.
              </div>
-             
-             <h2>
+             <!--
+             <h3>
              <iframe width="560" height="315" src="https://www.youtube.com/embed/4HNNkW3zphA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-             </h2>                         
-           
-            <div class="container3">
-            <div>Projects</div>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, asperiores. Harum, maxime doloremque! Quae repudiandae officiis, beatae sunt, ipsum ipsa ullam suscipit dolorum velit totam, placeat, quia atque dolor. Voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!
-             </div>
-             
-             <div class="column">
+             </h3>     
+            <div class="column">
              <img src="pic_busan%20night.jpg" width="100%"> 
              <img src="pic_busan%20night.jpg" width="100%">
              <img src="pic_busan%20night.jpg" width="100%"> 
              <img src="pic_busan%20night.jpg" width="100%">
              <img src="pic_busan%20night.jpg" width="100%">
              <img src="pic_busan%20night.jpg" width="100%">  
-             </div>             
-             
-            <div class="container4">
-            <div>About us</div>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!
-             </div> <br>                                       
-          
-            <div class="container5">
-             <div>Contact us</div>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, repudiandae repellat unde voluptatibus quidem ullam quaerat eos libero quisquam officia, nostrum dicta ratione omnis. Magni cupiditate aperiam architecto, aut consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sit, nihil! Doloremque laboriosam tempore nostrum eum in dolores nihil quam, ducimus! Eligendi, aliquam, laudantium! Praesentium quidem omnis odio distinctio adipisci!
-            </div>       
+            </div>                      
+  <div class="container3">
+        <!--
+        <header>
+             <h1>LED Light</h1>       
+        </header>
+        -->
+  <section class="content">
+      <nav>  
+          <a href="index.html">Home  </a><br>     
+          <a href="1.html">Products  </a><br>     
+          <a href="3.html">Projects  </a><br>   
+          <a href="2.html">About us  </a><br>     
+          <a href="4.html">Contact us</a><br> 
+      </nav>   
+   <main>    
+    <div id="l">Projects</div>
+    <div id="m">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sit, nihil maxime officia soluta. Quae magnam alias animi aut perferendis possimus optio odio minus, voluptate dolore eveniet unde, atque temporibus recusandae quas sed iure totam amet quam nemo, quasi autem. Dolorem saepe maxime vero, officia voluptates. Magni autem atque dolorum? ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eius.   
+    </div>
+   </main> 
+         <aside>
+            Ad Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum         
+         </aside>      
+    </section>
+             <footer>
+                 Copyright 2018
+             </footer>     
+  </div>                
 </body>
 </html>
