@@ -57,68 +57,78 @@
       body d{color:white;}
       body e{color:fuchsia;} 
       body f{color:black;}       
-       a {color:blue;      
-          text-decoration:none;}
+      a {color:blue;      
+         text-decoration:none;}
       #sn{display:flex;
           flex-direction: row-reverse;
-          font-size: 20px;
-          padding-top: 5px;
-          padding-bottom: 5px;}  
-       #h {border:15px solid tomato;
-           font-size:30px;           
-           text-align: center;}
-       #i {background-color:tomato;          
-           font-size:20px;
-           color:white;            
-           text-align:justify;
-           padding:10px;}      
-       #j {border:15px solid royalblue;
-           font-size:30px;           
-           text-align: center;}
-       #k {background-color:royalblue;          
-           font-size:20px;
-           color:white;            
-           text-align:justify;
-           padding:10px;} 
-      
-/*        h2 {text-align: right;*/
-/*            background-color: yellow;}*/
-/*        h3 {text-align: right;}     */      
-       .container3{display:flex;
-                   flex-direction: column;        
-                   font-size:20px;}              
+          background-color:gold;
+          padding-top: 3px;              
+          position:absolute; 
+          left:0;
+          top:100;
+          width:100%;
+          height:25px;
+          font-size:1.30rem;}       
+       .container{padding-top: 25px;
+                  display:flex;
+                  flex-direction: column;}             
 /*        header{border-bottom:1px solid gray;*/
 /*               background-color:yellow;*/
 /*               text-align: center;}*/        
-        .content{display:flex;}       
-        .content nav{border-left:1px solid gray;}
-        .content nav{border-right:1px solid gray;}
-        .content aside{border-left:1px solid gray;} 
-        .content aside{border-right:1px solid gray;}
+        .content{display:flex;
+                 position:absolute; 
+                 left:0;
+                 top:100;
+                 width:100%;}      
+        .content nav{border-right: 1px solid gray;}
+        .content aside{border-left: 1px solid gray;}     
        @media(max-width:500px){
         .content{flex-direction:column;}
         .content nav,aside{
                 border:none;
-                flex-basis:auto;
+                flex-basis:auto; 
                 main{order:0}
                 nav{order:1;}
-                aside{order:2; display:none;} } } 
-        nav {flex-basis: 150px;
-             flex-shrink: 0; 
+                aside{order:2; 
+                      display:none;
+            } } } 
+        nav {
+            flex-basis: 150px;
+             flex-shrink: 0;
              font-size: 20px;
              padding-left: 10px;
              padding-top: 10px;
              text-align: left;
              background-color:greenyellow;}
         main{padding:10px; 
-             color:white;
-             background-color:crimson;}
-        #l {font-size:30px;           
+             color:black;
+             background-color: crimson;}
+        #h {border:1px solid crimson;
+            background-color: white;
+            font-size:25px;          
             text-align: center;}
+        #i {font-size:20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color:white;            
+            text-align:justify;}             
+        #j {border:1px solid crimson; 
+            background-color: white;
+            font-size:25px;           
+            text-align: center;}
+        #k {font-size:20px;            
+            color:white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align:justify;} 
+        #l {border:1px solid crimson;
+            background-color: white;
+            font-size:25px;          
+            text-align: center;}      
         #m {font-size:20px;
-            padding-top: 10px;
-            text-align:justify;
-            color:white;}
+            padding-top: 5px;           
+            color:white;           
+            text-align:justify;}
         aside{flex-basis: 150px;
               flex-shrink: 0;
               font-size: 20px;
@@ -132,17 +142,19 @@
                padding-top: 10px;
                padding-bottom: 10px;}
       */
-      #ft {position:absolute; 
+    .container2{padding-top: 1032px;
+                display:flex;
+                flex-direction: column;} 
+    footer {position:absolute; 
            background-color:goldenrod;
-           padding-top:15px;
+           padding-top:10px;
            text-align: center; 
-           color:white;
-           font-weight: bold;
+           color:black;         
            left:0;
            top:100;
            width:100%;
-           height:40px;                   
-           font-size:1.5rem;}      
+           height:35px;                   
+           font-size:1.30rem;}      
       /*
       h1 {font-size:50px;
          text-align:center;
@@ -171,24 +183,16 @@
   gtag('config', 'UA-118599586-1');
 </script>
 </head>
- <body> 
+<body> 
          <div id="w"><b class="icon-plancast animate-spin">Welcome</b><c class="icon-soccer-ball animate-spin">to</c><d class="icon-snowflake-o animate-spin">visit</d><e class="icon-handshake-o animate-spin">`Coding</e><f class="icon-chrome animate-spin">Life</f></div>         
          <div id="sn">
-          <a href="index.html">Home   </a>         
+          <a href="index.html">Home__ </a>         
           <a href="1.html">Products_  </a>       
           <a href="3.html">Projects_  </a>     
           <a href="2.html">About us_  </a>       
           <a href="4.html">Contact us_</a>
-         </div>         
-            <div id="h">Home</div>  
-            <div id="i">                   
-             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, So</font>cial Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.       
-            </div> 
-            <div id="j">Products</div>  
-            <div id="k">            
-             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.
-             </div>
-             <!--
+         </div>              
+     <!--
              <h3>
              <iframe width="560" height="315" src="https://www.youtube.com/embed/4HNNkW3zphA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
              </h3>     
@@ -199,37 +203,44 @@
              <img src="pic_busan%20night.jpg" width="100%">
              <img src="pic_busan%20night.jpg" width="100%">
              <img src="pic_busan%20night.jpg" width="100%">  
-            </div>                      
-  <div class="container3">
-        <!--
-        <header>
-             <h1>LED Light</h1>       
-        </header>
-        -->
+            </div>                     
+       -->         
+ <div class="container">      
+<!--        <header>-->
+<!--             <h1>LED Light</h1>       -->
+<!--        </header>-->     
   <section class="content">
-      <nav>  
+      <nav> 
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere accusamus quis minus officia saepe voluptate ex laborum incidunt, nisi cum consectetur rerum ipsum deleniti dicta hic architecto. Ex id explicabo itaque voluptatibus at. Iste enim impedit neque totam odio, rem, earum odit nemo excepturi eaque eos qui quos sapiente optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident, pariatur, dolor alias quisquam harum est cupiditate id animi illo explicabo et exercitationem ex laboriosam. Eveniet architecto cumque repellendus voluptatem, enim tempore mollitia debitis esse, 
           <a href="index.html">Home  </a><br>     
           <a href="1.html">Products  </a><br>     
           <a href="3.html">Projects  </a><br>   
           <a href="2.html">About us  </a><br>     
           <a href="4.html">Contact us</a><br> 
-      </nav>   
-   <main>    
+      </nav>  
+   <main> 
+    <div id="h">Home</div>  
+    <div id="i">                   
+             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.       
+     </div>        
+    <div id="j">Products</div>  
+    <div id="k">            
+             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Intelligent Search on the Web. A panel about the future of the Web will be hosted at the end of the W3C track and we expect active interaction with the audience on site with the recent hot topics they care about for the Web. Also, W3C will join the exhibition of the Web Conference and we welcome conference attendees to visit our booth.
+     </div>
     <div id="l">Projects</div>
     <div id="m">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sit, nihil maxime officia soluta. Quae magnam alias animi aut perferendis possimus optio odio minus, voluptate dolore eveniet unde, atque temporibus recusandae quas sed iure totam amet quam nemo, quasi autem. Dolorem saepe maxime vero, officia voluptates. Magni autem atque dolorum? ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eius.
     Lorem ipsum dolor sit amet, consectetur abus, ratione. Fugiat labore beatae eveniet dolores necessitatibus, officiis, dignissimos veritatis nam quasi voluptas sunt!
-    ae nobis architecto quibusdam adipisci ducimus illum libero sequi praesentium voluptatibus deserunt, hic facere ab distinctio earum. Aliquid ducimus qui pariatur necessitatibus vel. Ullam iste totam consequatur nostrum! Deleniti cum sunt quas veniam n illo officia animi sapiente deserunt accusamus nam ullam, nostrum. Quam laboriosam excepturi porro ut consectetur a nam magni molestiae aliquam animi adipisci vel magnam suscipit consequuntur rem veniam odio ipsum, quo repellat reprehenderit, inventore dolor similique maiores assumenda. Saepe debitis eius distinctio dolor expedita necessitatibus qui commodi fuga ut. 
+    ae nobis architecto quibusdam adipisci ducimus illum libero sequi praesentium voluptatibus deserunt, hic facere ab distinctio earum. Aliquid ducimus qui pariatur necessitatibus vel. Ullam iste totam consequatur nostrum! Deleniti cum sunt quas veniam n illo officia animi sapiente deserunt accusamus nam ullam, nostrum. Quam laboriosam excepturi porro ut consectetur a nam magni molestiae aliquam animi adipisci vel magnam suscipit consequuntur rem veniam odio ipsum, quo repellat reprehenderit, inventore dolor similique maiores assumenda. Saepe debitis eius distinctio dolor expedita necessitatibus qui commodi 
     </div>
    </main> 
-         <aside>
-            Ad Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum         
+      <aside>
+            Ad Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti porro corrupti quibusdam tempore consequuntur quo facilis nesciunt optio dolorum sint eos debitis aut minima odit quisquam fugiat, aliquid doloremque. Sequi, et, reiciendis! Optio ut iure alias tenetur pariatur, quos soluta sequi? Ipsa quas quasi neque suscipit ex, culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nisi et esse voluptatibus, recusandae incidunt quo, fugiat necessitatibus omnis suscipit error, cum nihil   
          </aside>      
-    </section>
-<!--             <footer>-->
-<!--                 Copyright 2018-->
-<!--             </footer>  -->
-    <div id="ft">~ Have a good day ~ 2018</div>                
-  </div>                
+  </section>
+ </div> 
+ <div class="container2">          
+ <footer>Have a good day! 2018</footer>
+ </div>
 </body>
 </html>
