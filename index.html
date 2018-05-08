@@ -46,10 +46,12 @@
            height:110px;
            text-align:center;         
            font-size:2rem;}
-/*       #w:hover{transform:       */
-/*                scale(2);*/
-/*                transform-origin: center;*/
-/*                transition:all 1s;} */
+      /*
+       #w:hover{transform:       
+                scale(2);
+                transform-origin: center;
+                transition:all 1s;} 
+      */
       body {padding-top:170px;} 
       
       body b{color:black;}
@@ -59,50 +61,46 @@
       body f{color:black;}       
       a {color:blue;      
          text-decoration:none;}
-      #sn{display:flex;
-          flex-direction: row-reverse;
-          background-color:gold;
-          padding-top: 3px;              
-          position:absolute; 
-          left:0;
-          top:100;
-          width:100%;
-          height:25px;
-          font-size:1.30rem;}       
-       .container{padding-top: 25px;
-                  display:flex;
-                  flex-direction: column;}             
-/*        header{border-bottom:1px solid gray;*/
-/*               background-color:yellow;*/
-/*               text-align: center;}*/        
-        .content{display:flex;
-                 position:absolute; 
-                 left:0;
-                 top:100;
-                 width:100%;}      
-        .content nav{border-right: 1px solid gray;}
-        .content aside{border-left: 1px solid gray;}     
-       @media(max-width:500px){
+      
+       .container{display:flex;
+                  flex-direction:column;
+                  position:absolute;        
+                  left:0;
+                  top:100;
+                  width:100%;}
+        header{border-bottom:1px solid gray;
+               font-size: 1.30rem;
+/*               font-weight: bold;*/
+               text-align: right;
+               padding-top: 5px;
+               background-color: white;}
+        footer{border-top:1px solid gray;
+               background-color: goldenrod;
+               font-size: 1.5rem;
+               padding:10px;
+               text-align:center;}
+        .content{display:flex;}                 
+        .content nav{border-right:1px solid gray;}
+        .content aside{border-left:1px solid gray;}
+        @media(max-width:500px){
         .content{flex-direction:column;}
-        .content nav,aside{
+        .content nav,.content aside{
                 border:none;
-                flex-basis:auto; 
+                flex-basis:auto;
                 main{order:0}
                 nav{order:1;}
-                aside{order:2; 
-                      display:none;
-            } } } 
-        nav {
-            flex-basis: 150px;
+                aside{order:2;
+                      display:none; } } }      
+        nav {flex-basis: 150px;
              flex-shrink: 0;
              font-size: 20px;
-             padding-left: 10px;
-             padding-top: 10px;
+             padding: 10px;             
              text-align: left;
-             background-color:greenyellow;}
-        main{padding:10px; 
-             color:black;
-             background-color: crimson;}
+             background-color:greenyellow;} 
+        main{padding:10px;
+             color: black;
+             text-align: justify;
+             background-color: crimson;}       
         #h {border:1px solid crimson;
             background-color: white;
             font-size:25px;          
@@ -128,24 +126,23 @@
         #m {font-size:20px;
             padding-top: 5px;           
             color:white;           
-            text-align:justify;}
-        aside{flex-basis: 150px;
-              flex-shrink: 0;
-              font-size: 20px;
-              padding: 10px;
-              text-align: justify;
-              background-color:greenyellow;}
-      /*
-        footer{border-top:1px solid gray;
-               background-color:darkgray;
-               text-align: center;                
-               padding-top: 10px;
-               padding-bottom: 10px;}
-      */
-    .container2{padding-top: 1032px;
-                display:flex;
-                flex-direction: column;} 
-    footer {position:absolute; 
+            text-align:justify;}         
+       aside{flex-basis: 150px;
+             flex-shrink: 0;            
+             font-size: 20px;
+             padding: 10px;
+             padding-bottom: 0px;
+             text-align: justify;
+             background-color:greenyellow;} 
+       #n {background-color: white;
+           padding: 5px;
+           font-weight: bold;
+           text-align: center;}       
+    /*  
+    .container2{padding-top: 1000px;} 
+    footer {display:flex;
+           flex-direction: column;
+           position:absolute; 
            background-color:goldenrod;
            padding-top:10px;
            text-align: center; 
@@ -154,7 +151,8 @@
            top:100;
            width:100%;
            height:35px;                   
-           font-size:1.30rem;}      
+           font-size:1.30rem;} 
+      */
       /*
       h1 {font-size:50px;
          text-align:center;
@@ -185,13 +183,7 @@
 </head>
 <body> 
          <div id="w"><b class="icon-plancast animate-spin">Welcome</b><c class="icon-soccer-ball animate-spin">to</c><d class="icon-snowflake-o animate-spin">visit</d><e class="icon-handshake-o animate-spin">`Coding</e><f class="icon-chrome animate-spin">Life</f></div>         
-         <div id="sn">
-          <a href="index.html">Home__ </a>         
-          <a href="1.html">Products_  </a>       
-          <a href="3.html">Projects_  </a>     
-          <a href="2.html">About us_  </a>       
-          <a href="4.html">Contact us_</a>
-         </div>              
+         
      <!--
              <h3>
              <iframe width="560" height="315" src="https://www.youtube.com/embed/4HNNkW3zphA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -206,17 +198,18 @@
             </div>                     
        -->         
  <div class="container">      
-<!--        <header>-->
-<!--             <h1>LED Light</h1>       -->
-<!--        </header>-->     
+    <header>
+       <div id="sn">
+          <a href="index.html">Home_  </a>         
+          <a href="1.html">Products_  </a>       
+          <a href="3.html">Projects_  </a>     
+          <a href="2.html">About us_  </a>       
+          <a href="4.html">Contact us_ </a>
+         </div>                         
+    </header>     
   <section class="content">
       <nav> 
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere accusamus quis minus officia saepe voluptate ex laborum incidunt, nisi cum consectetur rerum ipsum deleniti dicta hic architecto. Ex id explicabo itaque voluptatibus at. Iste enim impedit neque totam odio, rem, earum odit nemo excepturi eaque eos qui quos sapiente optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident, pariatur, dolor alias quisquam harum est cupiditate id animi illo explicabo et exercitationem ex laboriosam. Eveniet architecto cumque repellendus voluptatem, enim tempore mollitia debitis esse, 
-          <a href="index.html">Home  </a><br>     
-          <a href="1.html">Products  </a><br>     
-          <a href="3.html">Projects  </a><br>   
-          <a href="2.html">About us  </a><br>     
-          <a href="4.html">Contact us</a><br> 
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere accusamus quis minus officia saepe voluptate ex laborum incidunt, nisi cum consectetur rerum ipsum deleniti dicta hic architecto. Ex id explicabo itaque voluptatibus at. Iste enim impedit neque totam odio, rem, earum odit nemo excepturi eaque eos qui quos sapiente optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident, pariatur, dolor alias quisquam harum est cupiditate id animi illo explicabo et exercitationem ex laboriosam. Eveniet architecto cumque repellendus voluptatem, enim tempore mollitia debitis esse,         
       </nav>  
    <main> 
     <div id="h">Home</div>  
@@ -235,12 +228,19 @@
     </div>
    </main> 
       <aside>
-            Ad Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti porro corrupti quibusdam tempore consequuntur quo facilis nesciunt optio dolorum sint eos debitis aut minima odit quisquam fugiat, aliquid doloremque. Sequi, et, reiciendis! Optio ut iure alias tenetur pariatur, quos soluta sequi? Ipsa quas quasi neque suscipit ex, culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nisi et esse voluptatibus, recusandae incidunt quo, fugiat necessitatibus omnis suscipit error, cum nihil   
-         </aside>      
+            Ad Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti porro corrupti quibusdam tempore consequuntur quo facilis nesciunt optio dolorum sint eos debitis aut minima odit quisquam fugiat, aliquid doloremque. Sequi, et, reiciendis! Optio ut iure alias tenetur pariatur, quos soluta sequi? Ipsa quas quasi neque suscipit ex, culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nisi<br>
+        <div id="n">
+          <a href="index.html">Home  </a><br>     
+          <a href="1.html">Products  </a><br>     
+          <a href="3.html">Projects  </a><br>  
+          <a href="2.html">About us  </a><br>     
+          <a href="4.html">Contact us</a><br>  
+        </div>
+      </aside>      
   </section>
- </div> 
- <div class="container2">          
- <footer>Have a good day! 2018</footer>
- </div>
+        <footer>
+            Have a good day! 2018
+        </footer> 
+ </div>  
 </body>
 </html>
