@@ -34,18 +34,15 @@
                  padding:10px;
                  text-align: justify;} 
       */
-       #w {
-/*           background-color:aqua;*/
-           background-image: url(p_stars%20on%20earth2.jpg); 
+       #w {background-image: url(p_stars%20on%20earth2.jpg); 
            background-size: cover;
            position:absolute; 
-           padding-top:110px;
+           padding-top:10px;
            font-weight: bold;
-/*           color:black;*/
            left:0;
            top:0;
            width:100%;
-           height:190px;
+           height:220px;
            text-align:center;         
            font-size:2.25rem;}
       /*
@@ -54,13 +51,13 @@
                 transform-origin: center;
                 transition:all 1s;} 
       */
-      body {padding-top:250px;}       
+      body {padding-top:220px;}       
       body b{color:yellow;}
       body c{color:lawngreen;}
       body d{color:white;}
       body e{color:fuchsia;} 
       body f{color:lawngreen;}       
-      a {color:blue;      
+      a {color:white;      
          text-decoration:none;}      
        .container{display:flex;
                   flex-direction:column;
@@ -70,27 +67,21 @@
                   width:100%;}
         header{border-bottom:1px solid gray;
                font-size: 1.30rem;
-/*               font-weight: bold;*/
                text-align: right;
-               padding-top: 3px;
-               background-color: white;}     
-        footer{border-top:1px solid gray;}     
-      .blend{background-image: 
-              url('p_sunrise%204.jpg');
-          color: white;
-          font-size: 1.5rem;
-          padding-top:145px; 
-          background-size: cover;
-          height: 150px;
-          background-color: rgba(0,0,255,0.5);       
-          background-blend-mode:exclusion;
-          transition: background-color 3s;}
-      .blend:hover{
-             background-color: rgba(0,0,255,1);
-             transition: background-color 2s;}      
+/*               padding-top: 3px;*/
+               background-color: black;
+/*               background-image: url(p_stars%20on%20earth2-B.jpg)*/
+      }     
+        footer{border-top:1px solid gray;               
+/*               font-size: 1.5rem;*/
+/*               padding-top:145px;*/
+/*               text-align: center;*/
+               background-image: url(p_stars%20on%20earth2-RB.jpg);
+               background-size: cover;
+               height: 200px;}                   
         .content{display:flex;}                 
-        .content nav{border-right:1px solid gray;}
-        .content aside{border-left:1px solid gray;}
+        .content nav{border-right: 1px solid gray;}
+        .content aside{border-left: 1px solid gray;}
         @media(max-width:500px){
         .content{flex-direction:column;}
         .content nav,.content aside{
@@ -102,24 +93,35 @@
                       display:none; } } }      
         nav,aside {flex-basis: 150px;
                    flex-shrink: 0;
+                   color: white;
                    font-size: 20px;
-                   padding: 10px;             
-                   text-align: justify;
-                   background-color:springgreen;} 
+                   padding: 10px;
+                   background-size: cover;
+                   text-align: justify;} 
+        nav {background-image: url(p_mountain%20sunrise2-L.jpg)}
         main{padding:10px;
-             background-color: crimson;}       
-        #h {border:1px solid crimson;
-            background-color: springgreen;
-            color: black;
+             font-size:20px;
+             color:white;
+             background-size: cover;
+             text-align:justify;
+             background-image: url(p_mountain%20sunrise2.jpg)} 
+      /*
+      .blend{background-image: 
+              url('p_mountain%20sunrise2-B.jpg');       
+          background-color: rgba(0,0,255,0.5);       
+          background-blend-mode:exclusion;
+          transition: background-color 3s;}
+      .blend:hover{
+             background-color: rgba(0,0,255,1);
+             transition: background-color 2s;} 
+      */
+        #h {color: white;
             font-size:25px;          
-            text-align: center;}
-        #i {font-size:20px;
-            color:white;
-            padding-top: 5px;
-            text-align:justify;}       
-        aside{padding-bottom: 0px;} 
-        #n {background-color: white;          
-            padding: 5px;           
+            text-align: center;}   
+        aside{padding-bottom: 0px;
+             background-image: url(p_mountain%20sunrise2-R.jpg)} 
+        #n {padding: 5px;
+/*            background-color: white;  */
             text-align: center;}       
     /*  
     .container2{padding-top: 1000px;} 
@@ -165,7 +167,8 @@
 </script>
 </head>
 <body> 
-         <div id="w"><b class="icon-plancast animate-spin">Welcome</b><c class="icon-soccer-ball animate-spin">to</c><d class="icon-snowflake-o animate-spin">visit</d><e class="icon-handshake-o animate-spin">Coding</e><f class="icon-chrome animate-spin">Life</f></div>         
+         <div id="w"><b class="icon-plancast animate-spin">Welcome</b><c class="icon-soccer-ball animate-spin">to</c><d class="icon-snowflake-o animate-spin">visit</d><e class="icon-handshake-o animate-spin">Coding</e><f class="icon-chrome animate-spin">Life</f>
+         </div>         
          
      <!--
              <h3>
@@ -188,19 +191,16 @@
           <a href="3.html">Projects_  </a>     
           <a href="2.html">About us_  </a>       
           <a href="4.html">Contact us_ </a>
-         </div>                         
+         </div>                       
     </header>     
   <section class="content">
       <nav> 
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere accusamus quis minus officia saepe voluptate ex laborum incidunt, nisi cum consectetur rerum ipsum deleniti dicta hic architecto. Ex id explicabo itaque voluptatibus at. Iste enim impedit neque totam odio, rem, earum odit nemo excepturi eaque eos qui quos sapiente optio.   
       </nav>  
    <main> 
-    <div id="h">LED light</div>  
-    <div id="i">                   
-             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi repellat blanditiis repudiandae velit necessitatibus quas incidunt odio consectetur esse error quisquam officiis debitis mollitia neque maxime enim, recusandae assumenda illum. Vel suscipit architecto officia excepturi minima corporis, voluptates velit harum eveniet, quis, unde aut adipisci consequatur culpa laboriosam. Odio cum distinctio deleniti omnis, rerum at itaque optio, ipsa. Facilis quo deleniti dolor laboriosam obcaecati corrupti voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos enim! dolor laboriosam obcaecati corrupti voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos enim! aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos      
-     </div>        
-    
-    
+    <div id="h">LED light</div> 
+             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi repellat blanditiis repudiandae velit necessitatibus quas incidunt odio consectetur esse error quisquam officiis debitis mollitia neque maxime enim, recusandae assumenda illum. Vel suscipit architecto officia excepturi minima corporis, voluptates velit harum eveniet, quis, unde aut adipisci consequatur culpa laboriosam. Odio cum distinctio deleniti omnis, rerum at itaque optio, ipsa. Facilis quo deleniti dolor laboriosam obcaecati corrupti voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos enim! dolor laboriosam obcaecati corrupti voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos enim! aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos 
+<!--             <div class="blend">   </div>     -->
    </main> 
       <aside>
             Ad Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti lis nesciunt optio Commodi quas deleniti lis nesciunt optioAd Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti lis nesciunt optio <br>
@@ -214,9 +214,7 @@
       </aside>      
   </section>
       <footer>   
-         <div class="blend">
-
-         </div>
+         
       </footer>         
  </div>  
 </body>
