@@ -36,7 +36,7 @@
       */
        #w {
 /*           background-color:aqua;*/
-           background-image: url(p_stars%20on%20earth.jpg); 
+           background-image: url(p_stars%20on%20earth2.jpg); 
            background-size: cover;
            position:absolute; 
            padding-top:110px;
@@ -61,8 +61,7 @@
       body e{color:fuchsia;} 
       body f{color:lawngreen;}       
       a {color:blue;      
-         text-decoration:none;}
-      
+         text-decoration:none;}      
        .container{display:flex;
                   flex-direction:column;
                   position:absolute;        
@@ -74,16 +73,22 @@
 /*               font-weight: bold;*/
                text-align: right;
                padding-top: 3px;
-               background-color: white;}
-        footer{border-top:1px solid gray;
-/*               background-color: goldenrod;*/
-               background-image: url(p_sunrise%203.jpg);
-               background-size: cover;
-               height: 100px;
-               color: white;
-               font-size: 1.5rem;
-               padding-top:70px;
-               text-align:center;}
+               background-color: white;}     
+        footer{border-top:1px solid gray;}     
+      .blend{background-image: 
+              url('p_sunrise%204.jpg');
+          text-align:center;
+          color: white;
+          font-size: 1.5rem;
+          padding-top:70px; 
+          background-size: cover;
+          height: 100px;
+          background-color: rgba(0,0,255,0.5);       
+          background-blend-mode:exclusion;
+          transition: background-color 3s;}
+      .blend:hover{
+             background-color: rgba(0,0,255,1);
+             transition: background-color 2s;}      
         .content{display:flex;}                 
         .content nav{border-right:1px solid gray;}
         .content aside{border-left:1px solid gray;}
@@ -209,9 +214,11 @@
         </div>
       </aside>      
   </section>
-        <footer>
+      <footer>   
+         <div class="blend">
             Have a good day !
-        </footer> 
+         </div>
+      </footer>         
  </div>  
 </body>
 </html>
