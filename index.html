@@ -10,7 +10,7 @@
   <style>   
 /*         *{width: 400px;}*/  
 /*      body {padding-top:200px;}       */
-    .container{display:flex;
+     .container{display:flex;
                 flex-direction:column;
                 position:absolute;        
                 left:0;
@@ -42,7 +42,7 @@
         body gg{color:lawngreen;}
         body dy{color:fuchsia;} 
         body qq{color:lawngreen;}           
-    .content{display: flex;}                 
+    .content{display: flex;}       
     .content nav{border-right: 1px solid gray;}
     .content aside{border-left: 1px solid gray;}
         @media(max-width:500px){
@@ -59,25 +59,26 @@
                    font-size: 20px;
                    padding: 10px;
                    background-size: cover;
-                   text-align: justify;} 
+                   text-align: justify;}
+      /*
         #tl{background-image:
            url(p_mountain%20sunriseL.jpg);         
            background-size: cover;}
         #tl:hover{transform:
                  scaleX(2.5);                
                  transform-origin: left;
-                 transition:all 2s;}      
+                 transition:all 2s;}
+      */
         main{padding:10px;
-             font-size:20px; 
-             color:black;           
-             text-align:justify;}     
-        #t{background-image:
-           url(p_mountain%20sunriseM.jpg);         
-           background-size: cover;}
+             width:100%;
+             background-image:     url(p_mountain%20sunrise.jpg);         
+             background-size: cover;}        
+      /*
         #t:hover{transform:
                  scaleX(1.30);                
                  transform-origin: center;
                  transition:all 2s;}
+      */
         a {color:white;      
            text-decoration:none;}
        /*   
@@ -89,18 +90,31 @@
           <a href="4.html">Contact us </a>   
          </span> 
         */
-        #sn {text-align: center;}
+        #sn {text-align: center;
+             font-size: 20px;}
         #mh {font-size:25px;
              color: white;
-             text-align: center;} 
-        #n {text-align: center;}
+             text-align: center;}         
+        #mi {text-align:center; }
+        img {width:450px;
+             float: center;
+             margin: 15px;}
+       #sm {text-align: center;
+            font-size: 25px;}
+       #sm:hover{transform:
+                 scale(2);                
+                 transform-origin: center;
+                 transition:all 2s;}
+            /*
+        #n {text-align: center;}      
         #tr{background-image:
            url(p_mountain%20sunriseR.jpg);         
            background-size: cover;}
         #tr:hover{transform:
                  scaleX(2);                
                  transform-origin: right;
-                 transition:all 2s;}   
+                 transition:all 2s;}
+            */
   </style> 
        
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -134,6 +148,7 @@
         </div>                       
     </header>     
   <section class="content">
+   <!--
     <div id="tl"> 
       <nav> 
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere accusamus quis minus officia saepe voluptate ex laborum incidunt, nisi cum consectetur rerum ipsum deleniti dicta hic architecto. Ex id explicabo itaque voluptatibus at. Iste enim impedit neque totam odio, rem, earum odit nemo excepturi eaque eos qui quos sapiente optio.<br>
@@ -145,9 +160,9 @@
           <a href="4.html">Contact us</a><br>  
         </div>   
       </nav>
-    </div>   
-      <div id="t"> 
-        <main> 
+    </div>  
+      -->      
+     <main> 
          <div id="sn">
           <a href="index.html">Home -  </a>         
           <a href="1.html">Products -  </a>       
@@ -155,15 +170,29 @@
           <a href="2.html">About us -  </a>       
           <a href="4.html">Contact us  </a>
          </div>                   
-         <div id="mh">LED</div>             
-             The <strong><a href="https://www.w3.org/" style="color:blue" target="_blank" title="The World Wide Web Consortium">W3C</a></strong> tutorials on Monday and Tuesday focus on Data Visualization, Media and Audio on the Web. The W3C Track on Friday invites conference attendees to talk to experts from W3C members and W3C team on topics including New Trends on the Web Platform, WebAssembly, WebXR, Web of Things, Social Web Protocols and the Foundations of Trust as well as Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi repellat blanditiis repudiandae velit necessitatibus quas incidunt odio consectetur esse error quisquam officiis debitis mollitia neque maxime enim, recusandae assumenda illum. Vel suscipit architecto officia excepturi minima corporis, voluptates velit harum eveniet, quis, unde aut adipisci consequatur culpa laboriosam. Odio cum distinctio deleniti omnis, rerum at itaque optio, ipsa. Facilis quo deleniti dolor laboriosam obcaecati corrupti voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus bus animi recusandae cupiditate porro m consectetur dignissimos enim! aliquam ullam cupiditate doloremque impedit, ati corrupti voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae ui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus aliquam ullam cupiditate doloremque voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos enim! dolor laboriosam obcaecati corrupti voluptates qui doloribus animi recusandae cupiditate porro accusantium nemo natus, iusto! Vitae aliquid voluptatibus voluptas provident inventore earum minima a doloribus aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos enim! aliquam ullam cupiditate doloremque impedit, eos consequatur quae tempore velit numquam consectetur dignissimos 
-       </main>
-      </div>
+         <div id="mh"><strong><a href="https://en.wikipedia.org/wiki/Light-emitting_diode" style="color:blue" target="_blank" title="Light Emitting Diode">LED</a></strong> light              
+         </div>
+         <div id=mi>        
+         <img src="p_busan%20night.jpg" alt="">     
+         <img src="p_city%20night.jpg" alt="">       
+         <img src="p_clip%20art.png" alt="">         
+         <img src="p_orora.jpg" alt="">         
+         <img src="p_stars%20of%20dawn.jpg" alt="">
+         <img src="p_sunrise-20.jpg" alt=""> 
+         <img src="p_city%20night.jpg" alt="">
+         <img src="p_city%20night.jpg" alt="">       
+         </div>
+         <div id="sm">
+         <a href="5.html" style="font-weight: bold">See more</a>
+         </div>
+      </main>       
+      <!--
     <div id="tr">    
       <aside>
-            Ad Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti lis nesciunt optio Commodi quas deleniti lis nesciunt optioAd Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti lis nesciunt optio         
+            Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti lis nesciunt optio Commodi quas deleniti lis nesciunt optioAd Lorem ipsum dolor sit ameconsectetur adipisicing eliReprehenderit laudantium, consequatdoloribus quaerat earum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas deleniti lis nesciunt optio         
       </aside> 
-    </div>     
+    </div>
+    -->     
   </section>
       <footer>
           <div id="hd"><hh class="icon-plancast animate-spin">Have</hh><aa class="icon-soccer-ball animate-spin">a</aa><gg class="icon-snowflake-o animate-spin">Good</gg><dy class="icon-handshake-o animate-spin">Day</dy><qq class="icon-chrome animate-spin">!</qq>
